@@ -1,4 +1,4 @@
-package com.cap.avi.restapi.service;
+package com.cap.mp.restapi.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.cap.avi.restapi.model.Employee;
-import com.cap.avi.restapi.repositary.EmployeeRepository;
+import com.cap.mp.restapi.model.Employee;
+import com.cap.mp.restapi.repositary.EmployeeRepository;
 
 @Component
 public class EmployeeServiceImpl implements IEmployeeService {

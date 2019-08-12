@@ -1,10 +1,10 @@
-package com.cap.avi.restapi.service;
+package com.cap.mp.restapi.service;
 
 import java.util.List;
 
 import org.springframework.stereotype.Component;
 
-import com.cap.avi.restapi.model.Employee;
+import com.cap.mp.restapi.model.Employee;
 
 
 @Component

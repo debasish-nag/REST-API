@@ -1,4 +1,4 @@
-package com.cap.avi.restapi.model;
+package com.cap.mp.restapi.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

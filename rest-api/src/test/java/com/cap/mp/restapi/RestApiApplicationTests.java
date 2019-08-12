@@ -1,4 +1,4 @@
-package com.cap.avi.restapi;
+package com.cap.mp.restapi;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

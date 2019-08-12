@@ -1,4 +1,4 @@
-package com.cap.avi.restapi.controler;
+package com.cap.mp.restapi.controler;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,10 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.cap.avi.restapi.exception.NoSuchResourceFoundException;
-import com.cap.avi.restapi.model.Employee;
-import com.cap.avi.restapi.service.IEmployeeService;
+import com.cap.mp.restapi.exception.NoSuchResourceFoundException;
+import com.cap.mp.restapi.model.Employee;
+import com.cap.mp.restapi.service.IEmployeeService;
 
 @RestController
 public class EmployeeController {

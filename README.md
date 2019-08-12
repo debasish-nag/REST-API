@@ -14,6 +14,47 @@ mvn clean package
 java -jar ./target/rest-api-0.0.1-SNAPSHOT.jar
 
 
+for payment API 
+
+AUTHENTICATION is not enabled 
+
+http://localhost:8080/payment
+
+PUT - > 
+    {
+        "paymentID": 1,
+        "marchenCode": "MC001",
+        "payementType": "Deposit",
+        "paymentMethod": "VISA",
+        "transcationAmount": 234
+    }
+POST ->
+
+ {
+        "marchenCode": "MC001",
+        "payementType": "Deposit",
+        "paymentMethod": "VISA",
+        "transcationAmount": 234
+    }
+
+
+rest of the application will work as the employee does
+
+Http : GET
+
+http://localhost:8080/payment/{paymentID}
+
+http://localhost:8080/payment/1
+
+
+Http : DELETE
+
+http://localhost:8080/payment/{paymentID}
+
+http://localhost:8080/payment/4
+
+
+
 -- View all the employess --
 
 Http : GET
@@ -67,3 +108,5 @@ Http : DELETE
 http://localhost:8080/employee/{employeeID}
 
 http://localhost:8080/employee/4
+
+
