@@ -24,7 +24,7 @@ public class EmployeeController {
 	@Autowired
 	IEmployeeService service;
 
-	@RequestMapping(value = "/employee", method = RequestMethod.POST, consumes = "application/json")
+	@RequestMapping(value = "/employee/create", method = RequestMethod.POST, consumes = "application/json")
 	public ResponseEntity<Employee> createEmployee(@RequestBody @Valid Employee employee) {
 
 		ResponseEntity<Employee> rsp = null;
@@ -50,7 +50,7 @@ public class EmployeeController {
 		return emp;
 	}
 
-	@RequestMapping(value = "/employee/{empId}", method = RequestMethod.DELETE)
+	@RequestMapping(value = "/employee/delete/{empId}", method = RequestMethod.DELETE)
 	@ResponseStatus(HttpStatus.OK)
 	public void deleteEmployeeByEmpid(@PathVariable Long empId) {
 
@@ -77,7 +77,7 @@ public class EmployeeController {
 	}
 	
 	
-	@RequestMapping(value = "/employee", method = RequestMethod.PUT, consumes = "application/json")
+	@RequestMapping(value = "/employee/update", method = RequestMethod.PUT, consumes = "application/json")
 	public ResponseEntity<Employee> updateEmployee(@RequestBody @Valid Employee employee) {
 
 		ResponseEntity<Employee> rsp = null;
