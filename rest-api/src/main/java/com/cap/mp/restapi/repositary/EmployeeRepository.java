@@ -11,6 +11,6 @@ import com.cap.mp.restapi.model.Employee;
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 	
 	@Transactional
-    Long deleteByEmpId(Long empId);
+    Long deleteByid(Long Id);
     
 }
