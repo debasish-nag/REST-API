@@ -3,6 +3,8 @@ package com.cap.mp.restapi.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
 
@@ -12,22 +14,17 @@ public class Employee {
 	
 	@Id
 	@GeneratedValue	
-	private Long empId;
+	private Long id;
 
 	@NotNull
 	private String name;
 	
 	@NotNull
-	private String address;
+	@Min(value = 20, message = "Age should not be less than 20")
+    @Max(value = 60, message = "Age should not be greater than 60")
+	private Long age;
 	
-	public Long getEmpId() {
-		return empId;
-	}
-
-	public void setEmpId(Long empId) {
-		this.empId = empId;
-	}
-
+	
 	public String getName() {
 		return name;
 	}
@@ -36,12 +33,20 @@ public class Employee {
 		this.name = name;
 	}
 
-	public String getAddress() {
-		return address;
+	public Long getId() {
+		return id;
 	}
 
-	public void setAddress(String address) {
-		this.address = address;
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public Long getAge() {
+		return age;
+	}
+
+	public void setAge(Long age) {
+		this.age = age;
 	}
 
 	public Long getSalary() {
