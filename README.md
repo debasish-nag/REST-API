@@ -1,5 +1,29 @@
 # REST-API
 
+ ## dated 30-8-2019   ##
+new requested URL for delte, create , update and rest of otehrs are same
+
+--delete--
+
+http://localhost:8080/employee/delete/{employeeID}
+
+-- create--
+
+http://localhost:8080/employee/create
+
+Body : { "name": "avi", "age" : "38", "salary": "34567" }
+
+--update --
+
+http://localhost:8080/employee/update
+
+Body : { "id": 4, "name": "svii", "age": "38", "salary": 34567 }
+
+
+
+
+###################################################################
+
 
 clone the repositery in your local drive
 
