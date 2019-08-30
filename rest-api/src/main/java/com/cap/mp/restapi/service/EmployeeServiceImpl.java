@@ -38,7 +38,7 @@ public class EmployeeServiceImpl implements IEmployeeService {
 		
 		
 		
-		return empRepo.deleteByEmpId(id);
+		return empRepo.deleteByid(id);
 	}
 
 	@Override
